@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Test</title>
+  <style>
+
+  body {
+    background: tan;
+  }
+
+  div {
+    display: block;
+    border: 1px solid darkgrey;
+    margin: 20px;
+  }
+
+  .punch {
+    height: 125px;
+    width: 200px;
+    background-image: url("punch_sprites.png");
+    -webkit-background-size: initial;
+         -o-background-size: initial;
+            background-size: initial;
+    -webkit-animation: punch 2s steps(25) infinite;
+    -moz-animation: punch 2s steps(25) infinite;
+    -ms-animation: punch 2s steps(25) infinite;
+    animation: punch 2s steps(25) infinite;
+  }
+
+  .fan {
+    height: 125px;
+    width: 270px;
+    background-image: url("fan_sprites_small_02.png");
+    -webkit-background-size: initial;
+         -o-background-size: initial;
+            background-size: initial;
+    -webkit-animation: fan 2s steps(20) infinite;
+    -moz-animation: fan 2s steps(20) infinite;
+    -ms-animation: fan 2s steps(20) infinite;
+    animation: fan 2s steps(20) infinite;
+  }
+
+  .car {
+    height: 124px;
+    width: 364px;
+    background-image: url("car_sprites.png");
+    -webkit-background-size: initial;
+         -o-background-size: initial;
+            background-size: initial;
+    -webkit-animation: car 2s steps(20) infinite;
+    -moz-animation: car 2s steps(20) infinite;
+    -ms-animation: car 2s steps(20) infinite;
+    animation: car 2s steps(20) infinite;
+  }
+
+  @-webkit-keyframes punch {
+    from { background-position: 0 0; }
+      to { background-position: 0 -3125px; }
+  }
+  @-moz-keyframes punch {
+    from { background-position: 0 0; }
+      to { background-position: 0 -3125px; }
+  }
+  @-ms-keyframes punch {
+    from { background-position: 0 0; }
+      to { background-position: 0 -3125px; }
+  }
+  @keyframes punch {
+    from { background-position: 0 0; }
+      to { background-position: 0 -3125px; }
+  }
+
+  @-webkit-keyframes fan {
+    from { background-position: 0 0; }
+      to { background-position: 0 -2500px; }
+  }
+  @-moz-keyframes fan {
+    from { background-position: 0 0; }
+      to { background-position: 0 -2500px; }
+  }
+  @-ms-keyframes fan {
+    from { background-position: 0 0; }
+      to { background-position: 0 -2500px; }
+  }
+  @keyframes fan {
+    from { background-position: 0 0; }
+      to { background-position: 0 -2500px; }}
+
+  /* car animation */
+  @-webkit-keyframes car {
+    from { background-position: 0 0; }
+      to { background-position: 0 -2480px; }
+  }
+  @-moz-keyframes car {
+    from { background-position: 0; }
+      to { background-position: 0 -2480px; }
+  }
+  @-ms-keyframes car {
+    from { background-position: 0; }
+      to { background-position: 0 -2480px; }
+  }
+  @keyframes car {
+    from { background-position: 0; }
+      to { background-position: 0 -2480px; }
+  }
+
+  </style>
+</head>
+<body>
+    <div class="car"></div>
+    <div class="punch"></div>
+    <div class="fan"></div>
+</body>
+</html>
